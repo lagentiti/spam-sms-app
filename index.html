@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>SPAM APP</title>
+    <style>
+      .cet-menubar, .cet-control-maximize {
+        display: none !important;
+      }
+      .cet-container {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="left">
+      <div id="top">
+        <div id="margin">
+          <div id="msglist">
+            <div class="message"><div id="list_number" style="color: blue !important;"></div><div class="link" id="num">exemple.txt</div></div>
+            <div class="message"><div id="connectphone" style="color: blue !important;"></div><div class="link" id="tuto"></div></div>
+            <div class="message"><div id="downloadapp" style="color: blue !important;"></div><div class="link" id="link"></div></div>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div style="padding: 25px; display: flex;">
+          <div class="btnspam" id="btnconnectphone" style="background-color: green; width: 120px;"></div>
+          <div style="padding: 5px;"></div>
+          <div class="btnspam" id="btnspamstart" style="background-color: green; display: none;"></div>
+          <div class="btnspam" id="btnspamstop" style="background-color: red; display: none;"></div>
+          <div style="padding: 5px;"></div>
+          <div class="btnspam" id="btntest" style="display: none;background-color: rgb(0, 110, 255);"></div>
+        </div>
+        <div id="errors" style="color: red;"></div>
+      </div>
+    </div>
+    <div id="right">
+      <div style="padding: 15px;">
+        <div style="padding-bottom: 5px;" id="txtphonelist"></div>
+        <input type="file" accept=".txt" id="file">
+        <div style="padding-bottom: 5px;padding-top: 5px;" id="messagemenu"></div>
+        <input type="text" name="" id="messageinput" style="color: black  !important;">
+        <div id="btnmessage"></div>
+        <div style="padding-bottom: 5px;padding-top: 5px;" id="changelangtxt"></div>
+        <select id="browsers" style="color: black !important;"></select>
+        <div id="btnlang"></div>
+      </div>
+    </div>
+    <div id="cover" style="display: none;">
+      <div id="cover_block">
+        <div id="close_num">
+          <div id="dwn"></div>
+          <div id="block_close">
+            <?xml version="1.0" encoding="UTF-8"?>
+            <svg xmlns="http://www.w3.org/2000/svg" id="Bold" viewBox="0 0 24 24" width="40" height="40"><path d="M14.121,12,18,8.117A1.5,1.5,0,0,0,15.883,6L12,9.879,8.11,5.988A1.5,1.5,0,1,0,5.988,8.11L9.879,12,6,15.882A1.5,1.5,0,1,0,8.118,18L12,14.121,15.878,18A1.5,1.5,0,0,0,18,15.878Z"/></svg>            
+          </div>
+        </div>
+        <div id="cover_texte">
+          5141234567<br/>
+          5141234567<br/>
+          5141234567<br/>
+          5141234567<br/>
+          5141234567<br/>
+          5141234567<br/>
+          5141234567<br/>
+          5141234567<br/>
+          5141234567<br/>
+          5141234567<br/>
+        </div>
+      </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
